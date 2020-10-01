@@ -1,0 +1,25 @@
+Perfil Administrador:
+
+	-> Home
+		-> Cadastro do Condutor
+			-> Matrícula
+	   		-> Nome
+	   		-> RG
+	   		-> CPF
+	  	 	-> Data de nascimento
+	   		-> Nº Registro da CNH
+	   		-> Validade
+	   		-> Gerar termo de responsabilidade
+			-> Grupo
+		
+		-> Cadastro do Veículo
+			-> Placa
+			-> Renavam
+			-> Chassi
+			-> Combustível
+			-> Quilometragem
+			-> Marca/Modelo
+			-> Foto
+			-> Ano de Fabricação
+			-> Ano Modelo
+			-> Cor

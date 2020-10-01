@@ -1,0 +1,219 @@
+*
+{
+	font-family: "Verdana"
+}
+
+body {
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+}
+
+a
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover 
+{
+	text-decoration: underline;
+}
+
+h1
+{
+	color: #4e93ff;
+	background-color: #eeeeee;
+	text-transform: uppercase;
+	font-style: italic;
+	font-size: 20px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	border-left: 10px solid #4e93ff;
+	border-right: 10px solid #4e93ff;
+	border-top: 2px solid #4e93ff;
+	border-bottom: 2px solid #4e93ff;
+	border-radius: 30px 30px 30px 30px;
+}
+
+fieldset
+{
+	width: 425px;
+	margin-left: auto;
+	margin-right: auto;
+	border-width: 2px;
+}
+
+input, 
+textarea
+select
+{
+	border: 2px solid #4e93ff;
+	height: 35px;
+	margin-bottom: 6px;
+}
+
+textarea
+{
+	height: 100px;
+	width: 300px;
+}
+
+table
+{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #eeeeee;
+	font-size: 18px;
+	border-spacing: 1px;
+}
+
+th
+{
+	background-color: #4e93ff;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 3px;
+}
+
+td
+{
+	padding: 3px;
+}
+
+tr:nth-child(even)
+{
+	background-color: #dddddd;
+}
+
+tr:nth-child(odd)
+{
+	background-color: #ffffff;
+}
+
+legend
+{
+	text-align: left;
+	
+}
+
+input[type=text],
+input[type=password],
+select
+{
+	font-size: 16px;
+	width: 180px;
+	padding-left: 8px;
+}
+
+input[type=button],
+input[type=submit]
+{
+	background-color: #4e93ff;
+	border-bottom: 3px solid #0153b0;
+	border-top: 1px solid #0153b0;
+	border-left: 1px solid #0153b0;
+	border-right: 1px solid #0153b0;
+	color: #ffffff;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 5px;
+	padding: 5px 8px;
+}
+
+input[type=button]:hover,
+input[type=submit]:hover
+{
+	background-color: #69c5ee;
+	border-color: #4e93ff;
+}
+
+input#inputSelecionado
+{
+	background-color: #69c5ee;
+	border-color: #1e9bde;
+}
+
+div#divLogotipoSistema
+{
+	background-color: #4e93ff;
+	height: 65px;
+}
+
+div#mensagemDeErro
+{
+	background-color: #d40000;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	color: #ffffff;
+	padding: 10px;
+}
+
+div#mensagemDeSucesso
+{
+	background-color: #0baf00;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	color: #ffffff;
+	padding: 10px;
+}
+
+div#divUsuarioLogado
+{
+    background-color: #66b5ff;
+    width: 100%;
+    height: auto;
+    color: #ffffff;
+    line-height: 40px;
+}
+
+span#spanAuxiliarDeAlinhamentoVertical
+{
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+img#imgLogoTipoSistema
+{
+	height: 100%;
+	vertical-align: middle;
+}
+
+img#imgIconeAvatar
+{
+	width: 130px;
+}
+
+img#imgCarro
+{
+	width: 200px;
+}
+
+fieldset#fieldsetFiltros
+{
+	border-width: 3px;
+}
+
+span#carroOpcaoTitulo
+{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+div#divVeiculoOpcao
+{
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+}
+
+.inputError
+{
+	border: 2px solid #ff2828;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mão na frota</title>
+<link rel="stylesheet" type="text/css" href="css/estiloSistema.css">
+</head>
+<body>
+	<header>
+		<div id="divLogotipoSistema">
+		<span id="spanAuxiliarDeAlinhamentoVertical"></span>
+			<a href="">
+				<img src="images/nomeLogo.png" id="imgLogoTipoSistema"/>
+			</a>
+		</div>
+		<div id="divUsuarioLogado">
+			Olá Nome do usuário!
+		</div>
+		<br/>
+	</header>
+	<br /><br />
+	<!-- Cabeçalho - Fim -->
+	
+	<div>
+		<h1>Relatório - Custo em R$ por mês</h1>
+		<fieldset id="fieldsetFiltros">
+			<legend>Filtros</legend>
+			<label for="Placa: ">Placa: </label><br/>
+			<input type="text"name="placa" id="placa"/><br/>
+			<label for="inicio">Início: </label><br/>
+			<input type="date" name="inicio" id="inicio"/><br/>
+			<label for="fim">Fim: </label><br/>
+			<input type="date" name="fim" id="fim"/><br/>
+			<input type="button" value="Buscar">
+		</fieldset>
+	</div>
+	<br/><br/>
+	
+	<table>
+		<tr>
+			<th>Placa</th>
+			<th>Média</th>
+		</tr>
+		
+		<tr>
+			<td>MHJ7846</td>
+			<td>R$ 200,00</td>
+			
+		</tr>
+		
+		<tr>
+			<td>HHJ7712</td>
+			<td>R$ 352,00</td>
+		
+		</tr>
+		
+		<tr>
+			<td>LKO2258</td>
+			<td>R$ 560,00</td>
+		
+		</tr>
+		
+		<tr>
+			<td>JHM8845</td>
+			<td>R$ 256,91</td>
+		
+		</tr>
+	</table>
+	
+	<!-- Rodapé - Início -->
+</body>
+</html>

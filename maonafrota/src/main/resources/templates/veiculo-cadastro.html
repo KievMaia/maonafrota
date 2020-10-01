@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org"
+	  layout:decorate="~{layout}">
+	  
+<body>
+	<div layout:fragment="content">
+	<!-- Cabeçalho - Fim -->
+
+		<div>
+			<h1>Cadastro do Veículo</h1>
+			
+			<div id="mensagemDeSucesso" th:if="${msg != null}">
+						<span th:text="${msg}"></span>
+					</div><br/>
+			
+			<form method="post" th:object="${veiculo}" th:action="@{/adm/veiculo/save}">
+				<fieldset>
+					<input type="hidden" th:field="*{id}"/>
+				
+					<label for="placa">Placa: </label><br/>
+					<input type="text" id="placa" name="placa" placeholder="Placa..." th:field="*{placa}" th:classappend="${#fields.hasErrors('placa')} ? 'inputError' : ''"/><br/><br/>
+					<div id="mensagemDeErro" th:if="${#fields.hasErrors('placa')}">
+							<span th:errors="*{placa}"></span>
+					</div><br/>
+					
+					<label for="renavam">Renavam: </label><br/>
+					<input type="text" id="renavam" name="renavam" placeholder="Renavam..." th:field="*{renavam}" th:classappend="${#fields.hasErrors('renavam')} ? 'inputError' : ''" onkeydown="return isNumberKey(event);"/><br/><br/>
+					<div id="mensagemDeErro" th:if="${#fields.hasErrors('renavam')}">
+							<span th:errors="*{renavam}"></span>
+					</div><br/>
+					
+					<label for="chassi">Chassi: </label><br/>
+					<input type="text" id="chassi" name="chassi" placeholder="Chassi..." th:field="*{chassi}" th:classappend="${#fields.hasErrors('chassi')} ? 'inputError' : ''"/><br/><br/>
+					<div id="mensagemDeErro" th:if="${#fields.hasErrors('chassi')}">
+							<span th:errors="*{chassi}"></span>
+					</div><br/>
+					
+					<label for="combustivel">Combustível: </label><br/>
+					<select name="combustivel" id="combustivel" th:value="*{combustivel}" >
+						<option>Álcool</option>
+						<option>Gasolina</option>
+						<option>Flex</option>
+					</select><br/><br/>
+					
+					<label for="marcaModelo">Marca/Modelo: </label><br/>
+					<input type="text" id="marcaModelo" name="marcaModelo" placeholder="Marca/Modelo..." th:field="*{marcaModelo}" th:classappend="${#fields.hasErrors('marcaModelo')} ? 'inputError' : ''"/><br/><br/>
+					<div id="mensagemDeErro" th:if="${#fields.hasErrors('marcaModelo')}">
+							<span th:errors="*{marcaModelo}"></span>
+					</div><br/>
+					
+					<label for="foto">Foto: </label><br/>
+					<input type="file" id="foto" name="foto" placeholder="Foto..." th:classappend="${#fields.hasErrors('foto')} ? 'inputError' : ''"/><br/><br/>
+					<div id="mensagemDeErro" th:if="${#fields.hasErrors('foto')}">
+							<span th:errors="*{foto}"></span>
+					</div><br/>
+					
+					<label for="anoFabricacao">Ano de Fabricação: </label><br/>
+					<input type="text" id="anoFabricacao" name="anoFabricacao" placeholder="Ano de Fabricação..." th:field="*{anoFabricacao}" th:classappend="${#fields.hasErrors('anoFabricacao')} ? 'inputError' : ''" onkeydown="return isNumberKey(event);"/><br/><br/>
+					<div id="mensagemDeErro" th:if="${#fields.hasErrors('anoFabricacao')}">
+							<span th:errors="*{anoFabricacao}"></span>
+					</div><br/>
+					
+					<label for="anoModelo">Ano Modelo: </label><br/>
+					<input type="text" id="anoModelo" name="anoModelo" placeholder="Ano Modelo..." th:field="*{anoModelo}" th:classappend="${#fields.hasErrors('anoModelo')} ? 'inputError' : ''" onkeydown="return isNumberKey(event);"/><br/><br/>
+					<div id="mensagemDeErro" th:if="${#fields.hasErrors('anoModelo')}">
+							<span th:errors="*{anoModelo}"></span>
+					</div><br/>
+					
+					<label for="quilometragem">Quilometragem: </label><br/>
+					<input type="text" id="quilometragem" name="quilometragem" placeholder="Quilometragem..." th:field="*{quilometragem}" th:classappend="${#fields.hasErrors('quilometragem')} ? 'inputError' : ''" onkeydown="return isNumberKey(event);"/><br/><br/>
+					<div id="mensagemDeErro" th:if="${#fields.hasErrors('quilometragem')}">
+							<span th:errors="*{quilometragem}"></span>
+					</div><br/>
+					
+					<label for="cor">Cor: </label><br/>
+					<input type="text" id="cor" name="cor" placeholder="Cor..." th:field="*{cor}" th:classappend="${#fields.hasErrors('cor')} ? 'inputError' : ''"/><br/><br/>
+					<div id="mensagemDeErro" th:if="${#fields.hasErrors('cor')}">
+							<span th:errors="*{cor}"></span>
+					</div><br/>
+					
+					<input type="submit" th:value="${!editMode} ? 'Cadastrar' : 'Alterar'"/>
+				</fieldset>
+			</form>
+			<br/>
+			
+			<input type="button" value="Voltar"/>
+			
+		</div>
+
+	<!-- Rodapé - Início -->
+</div>
+</body>
+</html>

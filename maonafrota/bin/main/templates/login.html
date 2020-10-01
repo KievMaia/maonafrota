@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org"
+	  layout:decorate="~{layout}">
+	  
+<body>
+	
+	
+	<div layout:fragment="content">
+	<!-- Cabeçalho - Fim -->
+		<div>
+			<img th:src="@{images/AvatarUser.png}" id="imgIconeAvatar"/>
+			<h1>Autenticação</h1>
+	
+			<form method="post" action="">
+				<fieldset>
+					<input type="text" name="matricula" placeholder="Matrícula..."/>
+					<input type="password" name="senha" placeholder="Senha..."/><br/>
+					
+					<input type="button" value="Entrar" />
+				</fieldset>
+			</form>
+			<br />
+			
+			<div id="mensagemDeErro">
+				Aqui vai um exemplo de mensagem de erro.
+			</div> <br/>
+	
+			<input type="button"value="Esqueci minha senha"/>
+			
+			<br/>
+		</div>
+		
+<!-- Rodapé - Início -->
+</div>
+</body>
+</html>

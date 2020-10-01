@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Mão na frota</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/estiloSistema.css}"/>
+<script type="text/javascript" th:src="@{/js/script.js}"></script>
+</head>
+<body>
+	<header>
+		<div id="divLogotipoSistema">
+		<span id="spanAuxiliarDeAlinhamentoVertical"></span>
+			<a th:href="@{/}">
+				<img th:src="@{/images/nomeLogo.png}" id="imgLogoTipoSistema"/>
+			</a>
+		</div>
+	</header>
+	<br /><br />
+	<div layout:fragment="content"></div>
+	<br/><br/>
+</body>
+</html>

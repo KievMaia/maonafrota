@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mão na frota</title>
+<link rel="stylesheet" type="text/css" href="css/estiloSistema.css">
+</head>
+<body>
+	<header>
+		<div id="divLogotipoSistema">
+		<span id="spanAuxiliarDeAlinhamentoVertical"></span>
+			<a href="">
+				<img src="images/nomeLogo.png" id="imgLogoTipoSistema"/>
+			</a>
+		</div>
+		<div id="divUsuarioLogado">
+			Olá Nome do usuário!
+		</div>
+		<br/>
+	</header>
+	<br /><br />
+	<!-- Cabeçalho - Fim -->
+
+		<div>
+			<h1>Cadastro do Veículo</h1>
+			
+			<div id="mensagemDeSucesso">
+				Aqui vai um exemplo de mensagem de sucesso
+			</div><br/>
+			
+			<form method="post" action="">
+				<fieldset>
+					<label for="matricula">Matrícula: </label><br/>
+					<input type="text" id="matricula" name="matricula" placeholder="Matrícula..."/><br/><br/>
+					<div id="mensagemDeErro">
+						Aqui vai um exemplo de mensgaem de erro
+					</div><br/>
+					
+					<label for="placa">Placa: </label><br/>
+					<input type="text" id="placa" name="placa" placeholder="Placa..."/><br/><br/>
+					
+					<label for="renavam">Renavam: </label><br/>
+					<input type="text" id="renavam" name="renavam" placeholder="Renavam..."/><br/><br/>
+					
+					<label for="chassi">Chassi: </label><br/>
+					<input type="text" id="chassi" name="chassi" placeholder="Chassi..."/><br/><br/>
+					
+					<label for="combustivel">Combustível: </label><br/>
+					<select name="combustivel" id="combustivel">
+						<option>Álcool</option>
+						<option>Gasolina</option>
+						<option>Flex</option>
+					</select><br/><br/>
+					
+					<label for="marca">Marca/Modelo: </label><br/>
+					<input type="text" id="marca" name="marca" placeholder="Marca/Modelo..."/><br/><br/>
+					
+					<label for="foto">Foto: </label><br/>
+					<input type="file" id="foto" name="foto" placeholder="Foto..."/><br/><br/>
+					
+					<label for="anoFabricacao">Ano de Fabricação: </label><br/>
+					<input type="text" id="anoFabricacao" name="anoFabricacao" placeholder="Ano de Fabricação..."/><br/><br/>
+					
+					<label for="anoModelo">Ano Modelo: </label><br/>
+					<input type="text" id="anoModelo" name="anoModelo" placeholder="Ano Modelo..."/><br/><br/>
+					
+					<label for="cor">Cor: </label><br/>
+					<input type="text" id="cor" name="cor" placeholder="Cor..."/><br/><br/>
+					
+					<input type="button"value="Cadastrar"/>
+				</fieldset>
+			</form>
+			<br/>
+			
+			<input type="button" value="Voltar"/>
+			
+		</div>
+
+	<!-- Rodapé - Início -->
+</body>
+</html>
